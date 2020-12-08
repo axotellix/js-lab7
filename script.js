@@ -55,3 +55,13 @@ let res = new Date(2020, 1+1, 0).getDate() === 29 ? true : false;
 alert(`Год ${y}: ${res}`);
 
 console.groupEnd();
+
+
+/* [ TASK 5 > Check if 10 ] */
+console.group('\n\nЗадание 5. Сравнение чисел');
+let x = parseInt(prompt('Задание 5. Введите 1-е число:'));
+let y = parseInt(prompt('Задание 5. Введите 2-е число:'));
+
+let resXY = Boolean( (x === 10) | (y === 10) | ( (x + y) === 10 ) );		// 10 === (x | y | (x + y));
+
+console.log(`(${x} & ${y}): ${resXY}`);
