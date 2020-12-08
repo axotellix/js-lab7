@@ -50,9 +50,9 @@ console.groupEnd();
 /* [ TASK 4 > Check if a year is leap ] */
 console.group('\n\nЗадание 4. Проверка високосности года \n\n');
 
-let y = prompt('Задание 4. Укажите год:');
-let res = new Date(2020, 1+1, 0).getDate() === 29 ? true : false;
-alert(`Год ${y}: ${res}`);
+let year = prompt('Задание 4. Укажите год:');
+let res = new Date(year, 1+1, 0).getDate() === 29 ? true : false;
+alert(`Год ${year}: ${res}`);
 
 console.groupEnd();
 
@@ -62,6 +62,6 @@ console.group('\n\nЗадание 5. Сравнение чисел');
 let x = parseInt(prompt('Задание 5. Введите 1-е число:'));
 let y = parseInt(prompt('Задание 5. Введите 2-е число:'));
 
-let resXY = Boolean( (x === 10) | (y === 10) | ( (x + y) === 10 ) );		// 10 === (x | y | (x + y));
+let resXY = Boolean( (x === 10) | (y === 10) | ( (x + y) === 10 ) );
 
-console.log(`(${x} & ${y}): ${resXY}`);
+console.log(`Числа (${x}, ${y}): ${resXY}`);
